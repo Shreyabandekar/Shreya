@@ -11,21 +11,33 @@
             line-height: 1.6;
         }
         .header, .section {
-            margin-bottom: 20px;
+            margin-bottom: 30px;
         }
         .header {
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
         .header img {
             border-radius: 50%;
             width: 150px;
             height: 150px;
+            margin-top: 20px; /* Added margin to bring the image down */
         }
-        .header h1 {
+        .header-text {
+            flex-grow: 1;
+        }
+        .header-text h1 {
             margin: 10px 0 5px 0;
         }
-        .header p {
+        .header-text p {
             margin: 0;
+        }
+        .section {
+            margin-bottom: 50px; /* Added margin to create gap */
+        }
+        .objective-section {
+            margin-bottom: 50px; /* Increased margin for Objective section */
         }
         .section h2 {
             border-bottom: 2px solid #000;
@@ -40,77 +52,125 @@
         }
         th, td {
             padding: 8px;
+        }
+        th {
+            text-align: center; /* Center align table headers */
+        }
+        td {
             text-align: left;
         }
         .video-container {
             text-align: center;
+        }
+        .right-align {
+            text-align: right; /* Added class for right alignment */
+        }
+        .date-place {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
         }
     </style>
 </head>
 <body>
 
     <div class="header">
+        <div class="header-text">
+            <h1>Shreya Bandekar</h1>
+            <p>Email: shreyabandekar8@gmail.com</p>
+        </div>
         <img src="your-image.jpg" alt="Your Image">
-        <h1>Shreya Bandekar</h1>
-        <p>Email:shreyabandekar8@gmail.com</p>
     </div>
 
-    <div class="section">
+    <div class="section objective-section">
         <h2>Objective</h2>
         <p>To work in a creative and challenging environment using skills and knowledge where I can continuously learn and add values
             to the work which I do with full dedication for the achievement of organizational goals.
         </p>
     </div>
 
-    <div class="section">
+    <div class="section objective-section">
         <h2>Academics</h2>
         <table>
             <tr>
-                <th>Institution</th>
-                <th>Degree</th>
+                <th>Education Qualification</th>
+                <th>School/College</th>
+                <th>University</th>
                 <th>Year</th>
-                <th>Percentage/CGPA</th>
+                <th>Percentage</th>
             </tr>
             <tr>
-                <td>Institution 1</td>
-                <td>Degree 1</td>
-                <td>Year 1</td>
-                <td>Percentage/CGPA 1</td>
+                <td>Master of Computer Applications (MCA)</td>
+                <td>Dayananda Sagar University</td>
+                <td>Dayananda Sagar University</td>
+                <td>Currently pursuing</td>
+                <td>-</td>
             </tr>
             <tr>
-                <td>Institution 2</td>
-                <td>Degree 2</td>
-                <td>Year 2</td>
-                <td>Percentage/CGPA 2</td>
+                <td>Bachelor of Computer Applications (BCA)</td>
+                <td>St. Francis de Sales College</td>
+                <td>Bangalore University</td>
+                <td>2020-2023</td>
+                <td>87.9%</td>
             </tr>
-            <!-- Add more rows as needed -->
+            <tr>
+                <td>Pre-University Education</td>
+                <td>St. Francis Sales P.U. College</td>
+                <td>Department of Pre-University Education</td>
+                <td>2018-2020</td>
+                <td>79%</td>
+            </tr>
+            <tr>
+                <td>I.C.S.E</td>
+                <td>Acts Secondary School</td>
+                <td>I.C.S.E Board</td>
+                <td>2018</td>
+                <td>79.3%</td>
+            </tr>
+            
         </table>
     </div>
 
-    <div class="section">
-        <h2>Projects</h2>
+    <div class="section objective-section">
+        <h2>Technical Skills</h2>
         <ul>
-            <li>Project 1: Description of project 1.</li>
-            <li>Project 2: Description of project 2.</li>
-            <!-- Add more projects as needed -->
+            <li>Languages: C, C++, Java, Python</li>
+            <li>Operating System: Windows</li>
+            <li>Packages: MS Office</li>
+            <li>Database: MySQL</li>
         </ul>
     </div>
 
-    <div class="section">
-        <h2>Skills</h2>
+    <div class="section objective-section">
+        <h2>Strengths</h2>
         <ul>
-            <li>Skill 1</li>
-            <li>Skill 2</li>
-            <!-- Add more skills as needed -->
+            <li>Communication skills</li>
+            <li>Ability to work in a team</li>
+            <li>Listening</li>
+            <li>Self-motivated</li>
+            <li>Responsible</li>
+            <li>Adaptability</li>
         </ul>
     </div>
 
-    <div class="section">
-        <h2>Languages</h2>
+    <div class="section objective-section">
+        <h2>Certificates</h2>
         <ul>
-            <li>Language 1</li>
-            <li>Language 2</li>
-            <!-- Add more languages as needed -->
+            <li>Basics of PHP</li>
+            <li>Certificate for completion of PHP and MySQL Training</li>
+            <li>Certificate for python course completion</li>
+        </ul>
+    </div>
+
+    <div class="section objective-section">
+        <h2>Personal Details</h2>
+        <ul>
+            <li>Date of Birth: 10-08-2002</li>
+            <li>Gender: Female</li> 
+            <li>Nationality: Indian</li> 
+            <li>Languages known: English, Kannada, Hindi, Konkani</li>
+            <li>Hobbies: Singing, Drawing</li>
+            <li>Address: Flat no 008, Vmaks Roselle Apartment, Ananthanagar Phase-2, Electronic City, Bangalore-100</li>
         </ul>
     </div>
 
@@ -121,6 +181,20 @@
             Your browser does not support the video tag.
         </video>
     </div>
+
+    <div class="section objective-section">
+        <h2>Declaration</h2>
+            <p>I, hereby declare that the above information provided by me is true to the best of my knowledge.</p>
+    </div>
+
+    <div class="section">
+        <div class="date-place">
+            <p>Date: 13-07-2024</p>
+            <p>(SHREYA BANDEKAR)</p>
+        </div>
+        <p>Place: Bangalore</p>
+    </div>
+
 
 </body>
 </html>
