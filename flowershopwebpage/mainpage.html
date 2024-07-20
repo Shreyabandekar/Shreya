@@ -2,208 +2,310 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower Shop</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Custom styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-
-        .hero {
-            background-color: #e77cc5; /* Light pink background color */
-            color: #fff;
-            text-align: center;
-            padding: 5rem 0;
-        }
-
-        .hero .btn {
-            background-color: #fff;
-            color: #f8c6c0;
-            border-radius: 25px;
-            border: 2px solid #f8c6c0;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .hero .btn:hover {
-            background-color: #f6a5a3;
-            color: #fff;
-        }
-
-        .navbar {
-            margin-bottom: 0;
-            border-bottom: 2px solid #f8c6c0;
-            background-color: #edcce3; /* White background for navbar */
-        }
-
-        .navbar-nav .nav-link {
-            font-size: 18px;
-            color: #333;
-            transition: color 0.3s;
-        }
-
-        .navbar-nav .nav-link.active,
-        .navbar-nav .nav-link:hover {
-            color: #333; /* Dark color to highlight active and hovered links */
-            background-color: #ede6eb; /* Light pink background on hover */
-            border-radius: 5px;
-        }
-
-        section {
-            padding: 60px 0;
-        }
-
-        .card {
-            border: none;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .card-img-top {
-            border-radius: 15px 15px 0 0;
-        }
-
-        .card-body {
-            padding: 1.25rem;
-        }
-
-        .form-control {
-            border-radius: 15px;
-            border: 1px solid #ddd;
-        }
-
-        .btn-primary {
-            background-color: #f8c6c0;
-            border: none;
-            border-radius: 25px;
-            color: #333;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .btn-primary:hover {
-            background-color: #f6a5a3;
-            color: #fff;
-        }
-
-        footer {
-            background-color: #f8f9fa;
-            border-top: 1px solid #ddd;
-            padding: 1rem;
-        }
-    </style>
+    <link rel="stylesheet" href="stylepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- fonts links -->
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">Flower Shop</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
-                <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div class="all-content">
+    <!-- navbar -->
+  <nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" id="logo"><img src="./flowerimages/logo.jpg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fa-solid fa-bars" style="color: white; font-size: 23px;"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+         
+         
+          <li class="nav-item">
+            <a class="nav-link" href="#product">Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallary">Gallary</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blogs">Blogs</a>
+          </li>
+         
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar -->
 
     <!-- Home Section -->
-    <header id="home" class="hero">
-        <div class="container">
-            <h1 class="display-4 font-weight-bold">Welcome to Our Flower Shop</h1>
-            <p class="lead">Bringing Beauty to Your Life with Every Bloom</p>
-            <a href="#gallery" class="btn btn-lg">View Our Collection</a>
+    <section id="home">
+        <div class="content">
+            <h3>Welcome To Our <br> Flower Shop<br></h3>
+            <p>Give your loved ones beautiful flowers and <br>make their entire day happy.<br></p>
+            <button id="btn">Shop Now</button>
         </div>
-    </header>
+    </section>
+     <!-- Home Section -->
 
-    <!-- About Us Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">About Us</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="https://via.placeholder.com/500x300" class="img-fluid rounded shadow" alt="About Us">
-                </div>
-                <div class="col-md-6">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan arcu. In bibendum dui sit amet est cursus, vel consectetur justo aliquam. Vivamus vulputate turpis at sapien consectetur, vel vestibulum ipsum cursus.</p>
-                </div>
+    <!-- about section -->
+<div class="about" id="about">
+    <div class="container">
+    <div class="heading">About <span>Us</span></div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card">
+            <img src="./flowerimages/about.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h3>What Makes Our Flowers Special?</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum minima numquam porro consequuntur ipsum, nulla aliquam amet quam consequatur expedita.
+            <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque minus dicta quia maxime! Suscipit rerum similique non perferendis maiores rem, cumque explicabo exercitationem deserunt illum in aperiam natus impedit recusandae?
+            <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rem voluptates harum, quis excepturi voluptatum!
+           </p>
+           <button id="about-btn">Learn More.</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- about section -->
+
+  <!-- top cards -->
+<section class="top-cards">
+    <div class="heading2">Top <span>Categories</span></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./flowerimages/topcard1.jpg" alt="">
+            
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./flowerimages/topcard2.jpg" alt="">
+            
+          </div>
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+          <div class="card">
+            <img src="./flowerimages/topcard3.jpg" alt="">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- top cards -->
+
+  <!-- product -->
+<section id="product" class="product">
+    <div class="container">
+    <div class="heading4">Products</div>
+  </div>
+    <div class="container" id="container3">
+  
+      <div class="row">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./flowerimages/product1.jpg" alt="">
+            <div class="card-body">
+              <h3>Romantic Red Roses</h3>
+            <p>Rs 200 <strike>Rs 500</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+  
             </div>
+          </div>
         </div>
-    </section>
-
-    <!-- Blog Section -->
-    <section id="blog" class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Our Blog</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card shadow-sm border-light">
-                        <img src="https://via.placeholder.com/350x200" class="card-img-top rounded-top" alt="Blog Post">
-                        <div class="card-body">
-                            <h5 class="card-title">Blog Post Title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus vel feugiat auctor, erat nulla cursus ex.</p>
-                            <a href="#" class="btn btn-primary">Read More</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Repeat the above block for more blog posts -->
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./flowerimages/product2.jpg" alt="">
+            <div class="card-body">
+              <h3>Wedding Bouquet</h3>
+            <p>Rs 530 <strike>Rs 800</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+  
             </div>
+          </div>
         </div>
-    </section>
-
-    <!-- Gallery Section -->
-    <section id="gallery" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Gallery</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card border-light shadow-sm">
-                        <img src="https://via.placeholder.com/350x200" class="card-img-top rounded-top" alt="Flower">
-                    </div>
-                </div>
-                <!-- Repeat the above block for more gallery items -->
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./flowerimages/product3.jpg" alt="">
+            <div class="card-body">
+              <h3>Showcase flowers</h3>
+            <p>Rs 130 <strike>Rs 150</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+  
             </div>
+          </div>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="bg-light py-5">
-        <div class="container">
-            <h2 class="text-center mb-4">Contact Us</h2>
-            <form>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Your Email">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="./flowerimages/product4.jpg" alt="">
+            <div class="card-body">
+              <h3>Lily Bouquet</h3>
+            <p>Rs 120 <strike>Rs 200</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+  
+            </div>
+          </div>
         </div>
-    </section>
+      </div>
+  
+    </div>
+  </section>
+  <!-- product -->
+  
+  
+<!-- our gallary -->
+<div class="container" id="gallary">
+    <h1>Our <span>Gallary</span></h1>
+    <div class="row" style="margin-top: 30px;">
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./flowerimages/gallery1.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./flowerimages/gallery2.jpg" alt="">
+        </div>
+      </div>
+      <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./flowerimages/gallery3.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- our gallary -->
+  
+  
+  <!-- contact -->
+<section class="contact" id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+         <div class="heading6">Contact <span>Us</span></div>
+  
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, blanditiis
+          <br>ipsum dolor sit amet consectetur.
+         </p>
+  
+         <input class="form-control" type="text" placeholder="Name" aria-label="default input example"><br>
+         <input class="form-control" type="email" placeholder="Email" aria-label="default input example"><br>
+         <input class="form-control" type="number" placeholder="Number" aria-label="default input example"><br>
+         <button id="contact-btn">Send Message</button>
+        </div>
+        <div class="col-md-5" id="col">
+          <h1>Info</h1>
+          <p><i class="fa-regular fa-envelope"></i> example@gmail.com</p>
+          <p><i class="fa-solid fa-phone"></i> +92000000000000000</p>
+         <p><i class="fa-solid fa-building-columns"></i> Karcahi Sindh Pakistan</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, culpa</p>
+        </div>
+      </div>
+    </div>
+  
+  </section>
+  <!-- contact -->
+  
+    
 
-    <!-- Footer -->
-    <footer class="bg-light text-center py-3">
-        <p>&copy; 2024 Flower Shop. All rights reserved.</p>
-    </footer>
+    <!-- blogs -->
+   <section class="blogs" id="blogs">
+    <h1>Latest <span>Blogs</span></h1>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./flowerimages/blog1.jpg" alt="">
+          <div class="card-body">
+            <h3>Lorem, ipsum dolor</h3>
+            <h5>Admin / 6 March 2020</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quis aperiam magnam nostrum quae distinctio, id minima repellat eveniet quaerat.</p>
+            <button id="blogbtn">Read More.</button>
+          </div>
+        </div>  
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./flowerimages/blog2.jpg" alt="">
+          <div class="card-body">
+            <h3>Lorem, ipsum dolor</h3>
+            <h5>Admin / 6 March 2020</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quis aperiam magnam nostrum quae distinctio, id minima repellat eveniet quaerat.</p>
+            <button id="blogbtn">Read More.</button>
+          </div>
+        </div>  
+        </div>
+        <div class="col-md-4 py-3 py-md-0">
+        <div class="card">
+          <img src="./flowerimages/blog3.jpg" alt="">
+          <div class="card-body">
+            <h3>Lorem, ipsum dolor</h3>
+            <h5>Admin / 6 March 2020</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quis aperiam magnam nostrum quae distinctio, id minima repellat eveniet quaerat.</p>
+            <button id="blogbtn">Read More.</button>
+          </div>
+        </div>  
+        </div>
+        
+      </div>
+
+    </div>
+
+
+   </section>
+   <!-- blogs -->
+
+
+
+
+
+
+
+   <!-- footer -->
+   <footer id="footer">
+    <div class="footer-logo text-center"><img src="./imagesofcoffee/logo.png" alt=""></div>
+    <div class="socail-links text-center">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-pinterest-p"></i>
+    </div>
+    <div class="copyright text-center">
+      &copy; Copyright <strong><span>Flower Shop</span></strong>. All Rights Reserved
+  </div>
+</footer>
+   <!-- footer -->
+
+   <a href="#" class="arrow"><i><img src="./imagesofcoffee/up-arrow.png" alt="" width="50px"></i></a>
+
+
+  </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
 </body>
 </html>
