@@ -19,44 +19,41 @@
 <body>
     <div class="all-content">
     <!-- navbar -->
-  <nav class="navbar navbar-expand-lg" id="navbar">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#" id="logo"><img src="./flowerimages/logo.jpg" alt=""></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span><i class="fa-solid fa-bars" style="color: white; font-size: 23px;"></i></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-         
-         
-          <li class="nav-item">
-            <a class="nav-link" href="#product">Product</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#gallary">Gallary</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#blogs">Blogs</a>
-          </li>
-         
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </nav>
-  <!-- navbar -->
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" id="logo"><img src="./flowerimages/logo.jpg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa-solid fa-bars" style="color: white; font-size: 23px;"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#product">Product</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallary">Gallary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blogs">Blogs</a>
+                    </li>
+                </ul>
+                <form class="d-flex" id="searchForm">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput" pattern="[A-Za-z\s]*" title="Search should only contain letters and spaces">
+                    <button class="btn btn-outline-success" type="submit" id="searchButton">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
 
     <!-- Home Section -->
     <section id="home">
@@ -66,246 +63,267 @@
             <button id="btn">Shop Now</button>
         </div>
     </section>
-     <!-- Home Section -->
+    <!-- Home Section -->
 
     <!-- about section -->
-<div class="about" id="about">
-    <div class="container">
-    <div class="heading">About <span>Us</span></div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="card">
-            <img src="./flowerimages/about.jpg" alt="">
-          </div>
+    <div class="about" id="about">
+        <div class="container">
+            <div class="heading">About <span>Us</span></div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="./flowerimages/about.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>What Makes Our Flowers Special?</h3>
+                    <p>Blooming with passion our flower shop was founded with the vision to bring nature's beauty into every home and celebration.
+                        <br><br> our mission is to create stunning floral arrangements that leave a lasting impression, tailored to your unique style and needs
+                        <br><br>We believe in quality, creativity, and sustainability. Each flower is carefully selected and arranged to ensure that every bouquet is a masterpiece.
+                        <br><br>From classic bouquets to modern arrangements, we offer a wide range of floral products for every occasion. Explore our collection to find the perfect flowers for your needs.
+                        <br><br>We would love to hear from you! Contact us today to learn more about our services or to place an order. Let's make your floral dreams come true.
+                    </p>
+                    <button id="about-btn">Learn More.</button>
+                </div>
+            </div>
         </div>
-        <div class="col-md-6">
-          <h3>What Makes Our Flowers Special?</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum minima numquam porro consequuntur ipsum, nulla aliquam amet quam consequatur expedita.
-            <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque minus dicta quia maxime! Suscipit rerum similique non perferendis maiores rem, cumque explicabo exercitationem deserunt illum in aperiam natus impedit recusandae?
-            <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id rem voluptates harum, quis excepturi voluptatum!
-           </p>
-           <button id="about-btn">Learn More.</button>
-        </div>
-      </div>
     </div>
-  </div>
-  <!-- about section -->
+    <!-- about section -->
 
-  <!-- top cards -->
-<section class="top-cards">
-    <div class="heading2">Top <span>Categories</span></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 py-3 py-md-0">
-          <div class="card">
-            <img src="./flowerimages/topcard1.jpg" alt="">
-            
-          </div>
+    <!-- top cards -->
+    <section class="top-cards">
+        <div class="heading2">Top <span>Categories</span></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="./flowerimages/topcard1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="./flowerimages/topcard2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="./flowerimages/topcard3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4 py-3 py-md-0">
-          <div class="card">
-            <img src="./flowerimages/topcard2.jpg" alt="">
-            
-          </div>
-        </div>
-        <div class="col-md-4 py-3 py-md-0">
-          <div class="card">
-            <img src="./flowerimages/topcard3.jpg" alt="">
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- top cards -->
+    </section>
+    <!-- top cards -->
 
-  <!-- product -->
-<section id="product" class="product">
-    <div class="container">
-    <div class="heading4">Products</div>
-  </div>
-    <div class="container" id="container3">
-  
-      <div class="row">
-        <div class="col-md-3 py-3 py-md-0">
-          <div class="card">
-            <img src="./flowerimages/product1.jpg" alt="">
-            <div class="card-body">
-              <h3>Romantic Red Roses</h3>
-            <p>Rs 200 <strike>Rs 500</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
-  
-            </div>
-          </div>
+    <!-- product -->
+    <section id="product" class="product">
+        <div class="container">
+            <div class="heading4">Products</div>
         </div>
-        <div class="col-md-3 py-3 py-md-0">
-          <div class="card">
-            <img src="./flowerimages/product2.jpg" alt="">
-            <div class="card-body">
-              <h3>Wedding Bouquet</h3>
-            <p>Rs 530 <strike>Rs 800</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
-  
+        <div class="container" id="container3">
+            <div class="row">
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <img src="./flowerimages/product1.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Romantic Red Roses</h3>
+                            <p>Rs 200 <strike>Rs 500</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <img src="./flowerimages/product2.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Wedding Bouquet</h3>
+                            <p>Rs 530 <strike>Rs 800</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <img src="./flowerimages/product3.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Showcase flowers</h3>
+                            <p>Rs 130 <strike>Rs 150</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 py-3 py-md-0">
+                    <div class="card">
+                        <img src="./flowerimages/product4.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Lily Bouquet</h3>
+                            <p>Rs 120 <strike>Rs 200</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <div class="col-md-3 py-3 py-md-0">
-          <div class="card">
-            <img src="./flowerimages/product3.jpg" alt="">
-            <div class="card-body">
-              <h3>Showcase flowers</h3>
-            <p>Rs 130 <strike>Rs 150</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
-  
+    </section>
+    <!-- product -->
+
+    <!-- our gallery -->
+    <div class="container" id="gallary">
+        <h1>Our <span>Gallery</span></h1>
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="./flowerimages/gallery1.jpg" alt="">
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-3 py-3 py-md-0">
-          <div class="card">
-            <img src="./flowerimages/product4.jpg" alt="">
-            <div class="card-body">
-              <h3>Lily Bouquet</h3>
-            <p>Rs 120 <strike>Rs 200</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
-  
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                    <img src="./flowerimages/gallery2.jpg" alt="">
+                </div>
             </div>
-          </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card">
+                  <img src="./flowerimages/gallery3.jpg" alt="">
+                </div>
+            </div>
         </div>
-      </div>
-  
     </div>
-  </section>
-  <!-- product -->
-  
-  
-<!-- our gallary -->
-<div class="container" id="gallary">
-    <h1>Our <span>Gallary</span></h1>
-    <div class="row" style="margin-top: 30px;">
-      <div class="col-md-4 py-3 py-md-0">
-        <div class="card">
-          <img src="./flowerimages/gallery1.jpg" alt="">
+    <!-- our gallery -->
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="heading6">Contact <span>Us</span></div>
+                    <form id="contactForm">
+                        <input class="form-control" type="text" placeholder="Name" aria-label="default input example" id="contactName" pattern="[A-Za-z\s]+" title="Name should only contain letters and spaces" required><br>
+                        <input class="form-control" type="email" placeholder="Email" aria-label="default input example" id="contactEmail" required><br>
+                        <input class="form-control" type="text" placeholder="Number" aria-label="default input example" id="contactNumber" pattern="\d{10}" title="Please enter a 10-digit phone number" required>
+                        <button id="contact-btn" type="submit">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-5" id="col">
+                    <h1>Info</h1>
+                    <p><i class="fa-regular fa-envelope"></i> flowershop@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +917438430935</p>
+                    <p><i class="fa-solid fa-building-columns"></i> Bangalore India</p>
+                    <p>Near HSR Layout, Bangalore</p>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-4 py-3 py-md-0">
-        <div class="card">
-          <img src="./flowerimages/gallery2.jpg" alt="">
-        </div>
-      </div>
-      <div class="col-md-4 py-3 py-md-0">
-        <div class="card">
-          <img src="./flowerimages/gallery3.jpg" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- our gallary -->
-  
-  
-  <!-- contact -->
-<section class="contact" id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-7">
-         <div class="heading6">Contact <span>Us</span></div>
-  
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, blanditiis
-          <br>ipsum dolor sit amet consectetur.
-         </p>
-  
-         <input class="form-control" type="text" placeholder="Name" aria-label="default input example"><br>
-         <input class="form-control" type="email" placeholder="Email" aria-label="default input example"><br>
-         <input class="form-control" type="number" placeholder="Number" aria-label="default input example"><br>
-         <button id="contact-btn">Send Message</button>
-        </div>
-        <div class="col-md-5" id="col">
-          <h1>Info</h1>
-          <p><i class="fa-regular fa-envelope"></i> example@gmail.com</p>
-          <p><i class="fa-solid fa-phone"></i> +92000000000000000</p>
-         <p><i class="fa-solid fa-building-columns"></i> Karcahi Sindh Pakistan</p>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, culpa</p>
-        </div>
-      </div>
-    </div>
-  
-  </section>
-  <!-- contact -->
-  
-    
+    </section>
+    <!-- contact -->
 
     <!-- blogs -->
-   <section class="blogs" id="blogs">
-    <h1>Latest <span>Blogs</span></h1>
-
-    <div class="container">
-
-      <div class="row">
-
-        <div class="col-md-4 py-3 py-md-0">
-        <div class="card">
-          <img src="./flowerimages/blog1.jpg" alt="">
-          <div class="card-body">
-            <h3>Lorem, ipsum dolor</h3>
-            <h5>Admin / 6 March 2020</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quis aperiam magnam nostrum quae distinctio, id minima repellat eveniet quaerat.</p>
-            <button id="blogbtn">Read More.</button>
-          </div>
-        </div>  
+    <section class="blogs" id="blogs">
+        <h1>Latest <span>Blogs</span></h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="./flowerimages/blog1.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Nature's Masterpiece: The Enchanting World of Flowers</h3>
+                            <h5>25th June 2024</h5>
+                            <p> Discover the enchanting world of flowers with us, where each petal is a brushstroke in nature's masterpiece.</p>
+                            <button id="blogbtn">Read More.</button>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="./flowerimages/blog2.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Handpicked Perfection: Nature's Touch in Your Home</h3>
+                            <h5>10th July 2024</h5>
+                            <p>Our flowers are handpicked with love and care to bring a touch of nature's perfection into your home.</p>
+                            <button id="blogbtn">Read More.</button>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-md-4 py-3 py-md-0">
+                    <div class="card">
+                        <img src="./flowerimages/blog3.jpg" alt="">
+                        <div class="card-body">
+                            <h3>Celebrate with Bespoke Floral Designs</h3>
+                            <h5>16th July 2024</h5>
+                            <p>Celebrate life's special moments with our bespoke floral designs, tailored to your personal style.</p>
+                            <button id="blogbtn">Read More.</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
         </div>
-        <div class="col-md-4 py-3 py-md-0">
-        <div class="card">
-          <img src="./flowerimages/blog2.jpg" alt="">
-          <div class="card-body">
-            <h3>Lorem, ipsum dolor</h3>
-            <h5>Admin / 6 March 2020</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quis aperiam magnam nostrum quae distinctio, id minima repellat eveniet quaerat.</p>
-            <button id="blogbtn">Read More.</button>
-          </div>
-        </div>  
-        </div>
-        <div class="col-md-4 py-3 py-md-0">
-        <div class="card">
-          <img src="./flowerimages/blog3.jpg" alt="">
-          <div class="card-body">
-            <h3>Lorem, ipsum dolor</h3>
-            <h5>Admin / 6 March 2020</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora quis aperiam magnam nostrum quae distinctio, id minima repellat eveniet quaerat.</p>
-            <button id="blogbtn">Read More.</button>
-          </div>
-        </div>  
-        </div>
+    </section>
+    <!-- blogs -->
+
+    <!-- footer -->
+    <footer id="footer">
         
-      </div>
+        <div class="socail-links text-center">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+        </div>
+        <div class="copyright text-center">
+            &copy; Copyright <strong><span>Flower Shop</span></strong>. All Rights Reserved
+        </div>
+    </footer>
+    <!-- footer -->
+
+    
+   <a href="#" class="arrow"><i><img src="./flowerimages/up-arrow.png" alt="" width="50px"></i></a>
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-
-   </section>
-   <!-- blogs -->
-
-
-
-
-
-
-
-   <!-- footer -->
-   <footer id="footer">
-    <div class="footer-logo text-center"><img src="./imagesofcoffee/logo.png" alt=""></div>
-    <div class="socail-links text-center">
-      <i class="fa-brands fa-twitter"></i>
-      <i class="fa-brands fa-facebook-f"></i>
-      <i class="fa-brands fa-instagram"></i>
-      <i class="fa-brands fa-youtube"></i>
-      <i class="fa-brands fa-pinterest-p"></i>
-    </div>
-    <div class="copyright text-center">
-      &copy; Copyright <strong><span>Flower Shop</span></strong>. All Rights Reserved
-  </div>
-</footer>
-   <!-- footer -->
-
-   <a href="#" class="arrow"><i><img src="./imagesofcoffee/up-arrow.png" alt="" width="50px"></i></a>
-
-
-  </div>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
+    <!-- JavaScript to handle form submissions and validations -->
+    <script>
+      // Prevent search form submission and clear input
+      document.getElementById('searchForm').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent the form from submitting and causing a page refresh
+          document.getElementById('searchInput').value = ''; // Clear the search input field
+      });
+  
+      // Validate that search input does not contain numbers
+      document.getElementById('searchInput').addEventListener('input', function(event) {
+          this.value = this.value.replace(/[^A-Za-z\s]/g, '');
+      });
+  
+      // Prevent contact form submission and clear inputs
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+          // Prevent the form from submitting normally
+          event.preventDefault(); 
+  
+          var phoneNumber = document.getElementById('contactNumber').value;
+  
+          // Check if the phone number is exactly 10 digits
+          if (phoneNumber.length !== 10) {
+              alert('Phone number must be exactly 10 digits.');
+              // No need to clear inputs here
+          } else {
+              // Clear input fields after successful submission
+              document.getElementById('contactName').value = ''; // Clear the name input field
+              document.getElementById('contactEmail').value = ''; // Clear the email input field
+              document.getElementById('contactNumber').value = ''; // Clear the number input field
+          }
+      });
+  
+      // Validate that contact name input does not contain numbers
+      document.getElementById('contactName').addEventListener('input', function(event) {
+          this.value = this.value.replace(/[^A-Za-z\s]/g, '');
+      });
+  
+      // Allow only numeric values in contact number input
+      document.getElementById('contactNumber').addEventListener('input', function(event) {
+          var input = event.target;
+          var value = input.value;
+  
+          // Allow only numeric values
+          input.value = value.replace(/[^0-9]/g, '');
+      });
+  </script>
+  
 </body>
 </html>
+
+
