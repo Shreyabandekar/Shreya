@@ -70,16 +70,7 @@
                 border-radius: 10px;
                 cursor: pointer;
             }
-            .arrow {
-                position: fixed;
-                border-radius: 50%;
-                height: 50px;
-                bottom: 40px;
-                right: 50px;
-                text-decoration: none;
-                text-align: center;
-                line-height: 50px;
-            }
+           
         </style>
     </head>
 
@@ -125,9 +116,9 @@
 
         <main>
             <!-- Home Section -->
-            <section id="home" class="text-center text-white d-flex align-items-center justify-content-center" style="background-image: url('./flowerimages/home1.jpg'); background-size: cover; background-position: center; height: 90vh;">
+            <section id="home" class="text-center text-white d-flex align-items-center justify-content-left" style="background-image: url('home1.jpg'); background-size: cover; background-position: center; height: 90vh;">
                 <div>
-                    <h3 class="display-3">Welcome To Our <br> Flower Shop</h3>
+                    <h3 class="display-3"><b>Welcome To Our <br> Flower Shop</h3></b>
                     <p class="lead">Give your loved ones beautiful flowers and <br>make their entire day happy.</p>
                     <button class="btn btn-custom">Shop Now</button>
                 </div>
@@ -316,11 +307,14 @@
                 </div>
             </div>
         </footer>
+       
+        <i class="arrow-up-circle"></i>
+        <svg xmlns="arrow-up-circle.svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+          </svg>
+        
 
-        <!-- Back to Top Arrow -->
-        <a href="#" class="arrow" style="background: white; color: black; border: 2px solid black; font-size: 40px;">
-            <i class="fa-solid fa-chevron-up"></i>
-        </a>
+       
 
         <!-- Bootstrap JavaScript Libraries -->
         <script
