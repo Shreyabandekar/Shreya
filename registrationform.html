@@ -85,12 +85,12 @@
 
 <div class="container">
   <h2>Registration Form</h2>
-  <form action="#" autocomplete="off">
+  <form id="registrationForm" action="#" method="post" onsubmit="return handleSubmit(event)" autocomplete="off">
     <label for="fname">First Name</label>
-    <input type="text" id="fname" name="fname" autocomplete="off" required>
+    <input type="text" id="fname" name="fname" pattern="[A-Za-z]+" title="Only letters are allowed" oninput="validateLetters(this)" autocomplete="off" required>
 
     <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lname" autocomplete="off" required>
+    <input type="text" id="lname" name="lname" pattern="[A-Za-z]+" title="Only letters are allowed" oninput="validateLetters(this)" autocomplete="off" required>
 
     <label for="email">Email Address</label>
     <input type="email" id="email" name="email" autocomplete="off" required>
@@ -129,6 +129,17 @@
   </form>
 </div>
 
+<script>
+  function handleSubmit(event) {
+    event.preventDefault(); // Prevents the form from submitting
+    
+    document.getElementById('registrationForm').reset(); // Clears all fields
+  }
+
+  function validateLetters(input) {
+    input.value = input.value.replace(/[^A-Za-z]/g, ''); // Remove any non-letter characters
+  }
+</script>
+
 </body>
 </html>
- 
