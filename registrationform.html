@@ -131,13 +131,13 @@
 
 <script>
   function handleSubmit(event) {
-    event.preventDefault(); // Prevents the form from submitting
+    event.preventDefault(); 
     
-    document.getElementById('registrationForm').reset(); // Clears all fields
+    document.getElementById('registrationForm').reset(); 
   }
 
   function validateLetters(input) {
-    input.value = input.value.replace(/[^A-Za-z]/g, ''); // Remove any non-letter characters
+    input.value = input.value.replace(/[^A-Za-z]/g, ''); 
   }
 </script>
 

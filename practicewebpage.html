@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Flower Shop</title>
+        <title>Title</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -9,313 +9,60 @@
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
 
-        <!-- Bootstrap CSS v5.3.2 -->
+        <!-- Bootstrap CSS v5.2.1 -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-        <!-- Custom Styles (Optional) -->
-        <style>
-            .navbar-custom {
-                background-color: #ef9ed8;
-            }
-            .navbar-brand img {
-                border-radius: 60px;
-                width: 100px;
-                margin-left: 40px;
-            }
-            .btn-custom {
-                background: white;
-                border-radius: 5px;
-                font-weight: bold;
-                border: none;
-            }
-            .btn-custom:hover {
-                background: #f19de5;
-                color: white;
-            }
-            .section-bg {
-                background-color: #f7f5f2;
-            }
-            .section-heading {
-                color: #f19de5;
-                font-size: 30px;
-                font-weight: bold;
-            }
-            .section-heading span {
-                color: #f19de5;
-            }
-            .card-custom img {
-                border-radius: 10px;
-            }
-            .contact-info p {
-                font-size: 15px;
-                color: white;
-            }
-            .footer {
-                background: #ef9ed8;
-                padding: 20px;
-                text-align: center;
-            }
-            .footer .social-links i {
-                font-size: 17px;
-                margin: 0 10px;
-                padding: 10px;
-                background: black;
-                color: white;
-                border-radius: 10px;
-                cursor: pointer;
-            }
-           
-        </style>
     </head>
 
     <body>
         <header>
-            <!-- Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-custom">
+            <!-- place navbar here -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#"><img src="logo.jpg" alt=""></a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span><i class="fa-solid fa-bars" style="color: white; font-size: 23px;"></i></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#about">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#product">Product</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#gallery">Gallery</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#blogs">Blogs</a>
-                            </li>
-                        </ul>
-                        <form class="d-flex" id="searchForm">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput" pattern="[A-Za-z\s]*" title="Search should only contain letters and spaces">
-                            <button class="btn btn-outline-success" type="submit" id="searchButton">Search</button>
-                        </form>
-                    </div>
+                  <a class="navbar-brand" href="#">
+                    <img src="logo.jpg" alt="" width="100" height="50">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#About">About</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Product">Product</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Gallery">Gallery</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#Blog">Blog</a>
+                      </li>
+                     
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
                 </div>
-            </nav>
-            <!-- Navbar -->
+              </nav>
         </header>
-
-        <main>
-            <!-- Home Section -->
-            <section id="home" class="text-center text-white d-flex align-items-center justify-content-left" style="background-image: url('home1.jpg'); background-size: cover; background-position: center; height: 90vh;">
-                <div>
-                    <h3 class="display-3"><b>Welcome To Our <br> Flower Shop</h3></b>
-                    <p class="lead">Give your loved ones beautiful flowers and <br>make their entire day happy.</p>
-                    <button class="btn btn-custom">Shop Now</button>
-                </div>
-            </section>
-            <!-- Home Section -->
-
-            <!-- About Section -->
-            <section id="about" class="section-bg py-5">
-                <div class="container">
-                    <div class="text-center mb-5">
-                        <h2 class="section-heading">About <span>Us</span></h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card">
-                                <img src="./flowerimages/about.jpg" class="card-img-top" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <h3>What Makes Our Flowers Special?</h3>
-                            <p>Blooming with passion our flower shop was founded with the vision to bring nature's beauty into every home and celebration.
-                                <br><br> Our mission is to create stunning floral arrangements that leave a lasting impression, tailored to your unique style and needs.
-                                <br><br> We believe in quality, creativity, and sustainability. Each flower is carefully selected and arranged to ensure that every bouquet is a masterpiece.
-                                <br><br> From classic bouquets to modern arrangements, we offer a wide range of floral products for every occasion. Explore our collection to find the perfect flowers for your needs.
-                                <br><br> We would love to hear from you! Contact us today to learn more about our services or to place an order. Let's make your floral dreams come true.
-                            </p>
-                            <button class="btn btn-outline-primary">Learn More</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- About Section -->
-
-            <!-- Top Cards -->
-            <section class="section-bg py-5">
-                <div class="text-center mb-5">
-                    <h2 class="section-heading">Top <span>Categories</span></h2>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4 py-3">
-                            <div class="card card-custom">
-                                <img src="./flowerimages/topcard1.jpg" class="card-img-top" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 py-3">
-                            <div class="card card-custom">
-                                <img src="./flowerimages/topcard2.jpg" class="card-img-top" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-4 py-3">
-                            <div class="card card-custom">
-                                <img src="./flowerimages/topcard3.jpg" class="card-img-top" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Top Cards -->
-
-            <!-- Product -->
-            <section id="product" class="section-bg py-5">
-                <div class="container text-center">
-                    <h2 class="section-heading">Products</h2>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 py-3">
-                            <div class="card card-custom">
-                                <img src="./flowerimages/product1.jpg" class="card-img-top" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Romantic Red Roses</h5>
-                                    <p class="card-text">Rs 200 <strike>Rs 500</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 py-3">
-                            <div class="card card-custom">
-                                <img src="./flowerimages/product2.jpg" class="card-img-top" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Wedding Bouquet</h5>
-                                    <p class="card-text">Rs 530 <strike>Rs 800</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 py-3">
-                            <div class="card card-custom">
-                                <img src="./flowerimages/product3.jpg" class="card-img-top" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Sunflower Delight</h5>
-                                    <p class="card-text">Rs 100 <strike>Rs 200</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3 py-3">
-                            <div class="card card-custom">
-                                <img src="./flowerimages/product4.jpg" class="card-img-top" alt="">
-                                <div class="card-body">
-                                    <h5 class="card-title">Tulip Collection</h5>
-                                    <p class="card-text">Rs 250 <strike>Rs 350</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Product -->
-
-            <!-- Gallery -->
-            <section id="gallery" class="section-bg py-5">
-                <div class="container text-center">
-                    <h2 class="section-heading">Gallery</h2>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-3 py-3">
-                            <div class="card card-custom">
-                                <img src="./flowerimages/gallery1.jpg" class="card-img-top" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-3 py-3">
-                            <div class="card card-custom">
-                                <img src="./flowerimages/gallery2.jpg" class="card-img-top" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-3 py-3">
-                            <div class="card card-custom">
-                                <img src="./flowerimages/gallery3.jpg" class="card-img-top" alt="">
-                            </div>
-                        </div>
-                        <div class="col-md-3 py-3">
-                            <div class="card card-custom">
-                                <img src="./flowerimages/gallery4.jpg" class="card-img-top" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Gallery -->
-
-            <!-- Contact -->
-            <section id="contact" class="section-bg py-5">
-                <div class="container">
-                    <div class="text-center mb-5">
-                        <h2 class="section-heading">Contact <span>Us</span></h2>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="contact-info">
-                                <p><i class="fa-solid fa-location-dot"></i> 123 Flower Street, City, Country</p>
-                                <p><i class="fa-solid fa-phone"></i> +123-456-7890</p>
-                                <p><i class="fa-solid fa-envelope"></i> info@flowershop.com</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <form>
-                                <div class="mb-3">
-                                    <label for="name" class="form-label">Name</label>
-                                    <input type="text" class="form-control" id="name" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="message" class="form-label">Message</label>
-                                    <textarea class="form-control" id="message" rows="3" required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-primary">Send Message</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Contact -->
-        </main>
-
-        <footer class="footer">
-            <div class="container">
-                <p>&copy; 2024 Flower Shop. All Rights Reserved.</p>
-                <div class="social-links">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                </div>
-            </div>
+        <main></main>
+        <footer>
+            <!-- place footer here -->
         </footer>
-       
-        <i class="arrow-up-circle"></i>
-        <svg xmlns="arrow-up-circle.svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
-          </svg>
-        
-
-       
-
         <!-- Bootstrap JavaScript Libraries -->
         <script
             src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
