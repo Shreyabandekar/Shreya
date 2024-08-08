@@ -133,12 +133,42 @@
   function handleSubmit(event) {
     event.preventDefault(); 
     
-    document.getElementById('registrationForm').reset(); 
+    // Custom validation logic
+    const form = document.getElementById('registrationForm');
+    const fname = document.getElementById('fname');
+    const lname = document.getElementById('lname');
+    const email = document.getElementById('email');
+    const password = document.getElementById('password');
+    const birthdate = document.getElementById('birthdate');
+    const gender = document.querySelector('input[name="gender"]:checked');
+    const country = document.getElementById('country');
+    
+    if (!validateLetters(fname) || !validateLetters(lname)) {
+      alert('First Name and Last Name should contain only letters.');
+      return false;
+    }
+    
+    if (!email.value || !password.value || !birthdate.value || !gender || !country.value) {
+      alert('Please fill out all required fields.');
+      return false;
+    }
+
+    alert('The form has been submitted successfully.');
+    form.reset(); 
   }
 
   function validateLetters(input) {
-    input.value = input.value.replace(/[^A-Za-z]/g, ''); 
+    const isValid = /^[A-Za-z]*$/.test(input.value);
+    if (!isValid) {
+      input.value = input.value.replace(/[^A-Za-z]/g, ''); 
+    }
+    return isValid;
   }
+
+  // Disable autocomplete on all form elements
+  document.querySelectorAll('input, select').forEach(element => {
+    element.setAttribute('autocomplete', 'off');
+  });
 </script>
 
 </body>
