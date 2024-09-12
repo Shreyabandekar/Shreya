@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <style>
+        .error-message {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        input {
+            display: block;
+            margin: 10px 0;
+            padding: 8px;
+            width: 250px;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: rgb(11, 168, 221);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Signup Form</h2>
+    <form id="signupForm" onsubmit="return validateForm(event)">
+        <div><label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <span class="error-message" id="usernameError"></span></div>
+        
+        <div><label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <span class="error-message" id="emailError"></span></div>
+        
+        <div><label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <span class="error-message" id="passwordError"></span></div>
+        
+        <div><label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <span class="error-message" id="confirmPasswordError"></span></div>
+        
+        <button type="submit">Signup</button>
+    </form>
+
+    <script>
+        document.getElementById('username').addEventListener('input', function() {
+            const username = document.getElementById('username');
+            const usernameError = document.getElementById('usernameError');
+            if (username.value.length < 3 || username.value.length > 25) {
+                usernameError.textContent = 'Username must be between 3 and 25 characters.';
+            } else {
+                usernameError.textContent = '';
+            }
+        });
+
+        document.getElementById('email').addEventListener('input', function() {
+            const email = document.getElementById('email');
+            const emailError = document.getElementById('emailError');
+            if (!email.value.includes('@gmail.com')) {
+                emailError.textContent = 'Invalid email address. Please include an "@" symbol.';
+            } else {
+                emailError.textContent = '';
+            }
+        });
+
+        document.getElementById('password').addEventListener('input', function() {
+            const password = document.getElementById('password');
+            const passwordError = document.getElementById('passwordError');
+            const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{3,}$/;
+            if (!passwordRegex.test(password.value)) {
+                passwordError.textContent = 'Password must contain at least one uppercase letter, one lowercase letter, and one special character.';
+            } else {
+                passwordError.textContent = '';
+            }
+        });
+
+        document.getElementById('confirmPassword').addEventListener('input', function() {
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const confirmPasswordError = document.getElementById('confirmPasswordError');
+            if (password !== confirmPassword) {
+                confirmPasswordError.textContent = 'Passwords do not match.';
+            } else {
+                confirmPasswordError.textContent = '';
+            }
+        });
+
+        function validateForm(event) {
+            event.preventDefault();
+            const usernameError = document.getElementById('usernameError').textContent;
+            const emailError = document.getElementById('emailError').textContent;
+            const passwordError = document.getElementById('passwordError').textContent;
+            const confirmPasswordError = document.getElementById('confirmPasswordError').textContent;
+
+            if (!usernameError && !emailError && !passwordError && !confirmPasswordError) {
+                alert('Form submitted successfully!');
+                document.getElementById('signupForm').reset();
+                return True;
+                  
+            } else {
+                alert('Please correct the errors before submitting.');
+                return false; 
+        }
+    }
+    </script>
+</body>
+</html>
