@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .chat-container {
+            width: 400px;
+            height: 500px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .chat-box {
+            height: 400px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        .user-input {
+            display: flex;
+        }
+        .user-input input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .user-input button {
+            padding: 10px;
+            margin-left: 10px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="chat-container">
+        <div id="chatBox" class="chat-box">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div class="user-input">
+            <input type="text" id="userMessage" placeholder="Type a message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script>
+        // Function to send a message
+        function sendMessage() {
+            // Get the message input element
+            const userMessageElement = document.getElementById('userMessage');
+            const chatBoxElement = document.getElementById('chatBox');
+
+            // Get the message typed by the user and convert it to lowercase
+            const userMessage = userMessageElement.value.trim().toLowerCase();
+
+            if (userMessage) {
+                // Add user message to the chat box
+                addMessageToChatBox('User', userMessage);
+
+                // Generate a chatbot response
+                const botResponse = getBotResponse(userMessage);
+
+                // Add bot response to the chat box
+                setTimeout(() => {
+                    addMessageToChatBox('Bot', botResponse);
+                }, 500);
+                
+                // Clear the input field
+                userMessageElement.value = '';
+            }
+        }
+
+        // Function to add a message to the chat box
+        function addMessageToChatBox(sender, message) {
+            const chatBoxElement = document.getElementById('chatBox');
+            const newMessage = document.createElement('p');
+            newMessage.textContent = `${sender}: ${message}`;
+            chatBoxElement.appendChild(newMessage);
+
+            // Scroll to the bottom of the chat box
+            chatBoxElement.scrollTop = chatBoxElement.scrollHeight;
+        }
+
+        // Simple bot response logic
+        function getBotResponse(userMessage) {
+            if (userMessage.includes('hi') || userMessage.includes('hello')) {
+                return 'Hello! How can I assist you today?';
+            } 
+            else if (userMessage.includes('how are you') || userMessage.includes('how are u')) {
+                return 'I am just a bot, but thank u for asking, how are u though';
+            } 
+            else if(userMessage.includes('i am also fine thank u for asking'))
+            {
+                return 'so what do u want to know about';
+            }
+            else if (userMessage.includes('do you have a name') || userMessage.includes('what is your name') || userMessage.includes('do u have a name')) {
+                return 'I don’t have a name, but you can call me ChatBot!';
+            }
+            else if(userMessage.includes('oh! a very lovely name'))
+            {
+                return 'Thank u so much for the compliment';
+            }
+            else if (userMessage.includes('okay it was nice texting u bye')) {
+                return 'Goodbye! Have a great day!';
+            } 
+            else {
+                return "I’m not sure how to respond to that. Can you ask something else?";
+            }
+        }
+    </script>
+
+</body>
+</html>
